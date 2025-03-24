@@ -1,0 +1,323 @@
+.main-container {
+  gap: 1.25rem;
+  align-items: center;
+  padding: 0.625rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.header-images.mobile {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.resp-img {
+  height: 7.5rem;
+  width: 9.375rem;
+  flex-shrink: 0;
+}
+
+.header-images.desktop {
+  display: none;
+}
+
+.advantages-header {
+  text-align: center;
+  width: 18rem;
+  line-height: 2rem;
+  margin: 1.25rem 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #7A9D8C;
+  leading-trim: both;
+  text-edge: cap;
+}
+
+.svg-layout {
+  grid-template-columns: repeat(2, 8.5rem);
+  display: grid;
+  gap: 2rem 1rem;
+  justify-content: center;
+}
+
+.svg-block {
+  align-items: center;
+  display: flex;
+  width: 8.5rem;
+  flex-direction: column;
+}
+
+.svg-pic {
+  flex-shrink: 0;
+  height: 3.5rem;
+  width: 4.5rem;
+  fill: #7A9D8C;
+}
+
+.label-text {
+  width: 8.5rem;
+  text-align: center;
+  line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #050706;
+  height: 2.625rem;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.unique-group {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.unique-image {
+  border-radius: 0.625rem;
+  transform: translateX(-2rem);
+  height: 17.6875rem;
+  width: 18rem;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%),
+    url('2.png') lightgray -7.04rem 0 / 174.837% 100% no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.svg-box-container {
+  background: url('svg/9.svg') no-repeat center/cover;
+  width: 18rem;
+  height: 40rem;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.svg-box-container img {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.svg-box-text {
+  padding: 0.625rem;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 15.0625rem;
+  line-height: 1.5rem;
+  top: 50%;
+  left: 50%;
+  font-style: normal;
+  color: #050706;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+}
+
+.lower-section {
+  align-items: center;
+  gap: 1.25rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.lower-img {
+  border-radius: 0.625rem;
+  background: url('img/5.png') center/cover no-repeat;
+  height: 17.6875rem;
+  width: 18rem;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.lower-img-text {
+  padding: 0.625rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #050706;
+  font-style: normal;
+  font-weight: 400;
+  width: 18rem;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 48rem) {
+  .main-container {
+    margin: 0 auto;
+    max-width: 48rem;
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+  
+  .advantages-header {
+    width: 20rem;
+    line-height: 2.25rem;
+    font-size: 2rem;
+  }
+  
+  .svg-layout {
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(4, 8.5rem);
+  }
+  
+  .unique-image,
+  .svg-box-container,
+  .lower-img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .main-container {
+    padding: 1.5rem;
+    max-width: 64rem;
+  }
+  
+  .advantages-header {
+    width: 22rem;
+    line-height: 2.5rem;
+    font-size: 2.25rem;
+  }
+  
+  .header-images.mobile {
+    display: none;
+  }
+  
+  .header-images.desktop {
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+  }
+  
+  .header-images.desktop .top-img {
+    background: lightgray 50% / cover no-repeat;
+    width: 22rem;
+    flex-shrink: 0;
+    height: 17.5rem;
+    border-radius: 0.625rem;
+  }
+  
+  .unique-group {
+    align-items: flex-start;
+    gap: 2rem;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  .unique-image {
+    border-radius: 0.625rem;
+    height: 33.44rem;
+    width: 34rem;
+    transform: translateX(-2rem);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%),
+    url('2.png') lightgray -7.04rem 0 / 174.837% 100% no-repeat;
+    flex-shrink: 0;
+  }
+  
+  .svg-box-container {
+    transform: translateX(-4rem);
+    height: 33.44rem;
+    width: 38.44rem;
+    flex-shrink: 0;
+  }
+  
+  .svg-box-text {
+    padding: 0.625rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 24rem;
+    line-height: 1.75rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: normal;
+    color: #050706;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+  }
+  
+  .svg-layout {
+    height: auto;
+    gap: 1.5rem 1rem;
+    width: 90rem;
+    grid-template-columns: repeat(4, 21rem);
+  }
+  
+  .svg-block {
+    width: 21rem;
+  }
+  
+  .svg-pic {
+    height: 8.125rem;
+    width: 10.5rem;
+  }
+  
+  .label-text {
+    width: 21rem;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+  }
+  
+  .lower-section {
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .lower-img-wrapper {
+    height: 25.875rem;
+    position: relative;
+    width: 42.0375rem;
+  }
+  
+  .lower-img {
+    border-radius: 0.625rem;
+    width: 42.0375rem;
+    height: 25.875rem;
+    transform: translateX(17.5rem);
+    position: relative;
+    z-index: 9999;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%),
+                url('img/4.png') white 0% / cover no-repeat;
+    box-shadow: 0rem 0.25rem 2.0625rem 0rem rgba(0,0,0,0);
+  }
+  
+  .svg-ten {
+    background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
+    border-radius: 0.625rem;
+    flex-shrink: 0;
+    height: 25.875rem;
+    left: -4rem;
+    position: absolute;
+    top: 4rem;
+    transform: translateX(17.5rem);
+    width: 42.0375rem;
+    box-shadow: 0rem 0.25rem 2.0625rem 0rem rgba(0,0,0,0.15);
+  }
+  
+  .lower-img-text {
+    padding: 0.625rem;
+    transform: translate(-10rem, -25rem);
+    text-align: left;
+    width: 22.019625rem;
+    line-height: 1.75rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #050706;
+  }
+}
